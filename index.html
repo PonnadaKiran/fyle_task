@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repository Explorer</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        
+        <!-- Loader element -->
+        <div id="loader" class="loader"></div>
+
+
+        <!-- Search Bar -->
+        <div class="search-area text-center py-5">
+            <h1>Explore GitHub Repositories</h1>
+            <p class="lead">Enter a GitHub username and find their public repositories.</p>
+            <div class="search-box d-flex justify-content-center">
+                <input type="text" id="search-input" class="form-control w-50" placeholder="GitHub username">
+                <button class="btn btn-success ml-2" onclick="searchUser()">Search</button>
+            </div>
+        </div>
+
+        <!-- User Profile and Repositories -->
+        <div id="user-content" style="display: none;">
+            <div id="user-profile" class="text-center mb-4">
+                <!-- User profile will be inserted here by JavaScript -->
+            </div>
+            <div id="repository-list" class="row">
+                <!-- Repositories will be inserted here by JavaScript -->
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Repository pagination">
+                <ul id="pagination" class="pagination justify-content-center">
+                    <!-- Pagination will be inserted here by JavaScript -->
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
